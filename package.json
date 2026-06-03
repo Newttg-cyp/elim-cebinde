@@ -1,17 +1,21 @@
 {
-  "name": "elim-cebimde-frontend",
+  "name": "elim-cebimde-backend",
   "version": "1.0.0",
+  "description": "Elim Cebimde - Yapay Zeka Destekli Finansal Disiplin Uygulaması Backend MVP",
+  "main": "src/index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
-    "expo": "^54.0.35",
-    "expo-status-bar": "~1.12.1",
-    "react": "18.2.0",
-    "react-native": "0.74.1"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
   },
-  "private": true
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
